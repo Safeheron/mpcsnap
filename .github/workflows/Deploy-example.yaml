@@ -19,11 +19,17 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run tests
+      - name: Run test mpc-adapter
+        run: yarn workspace @safeheron/two-party-mpc-adapter run test
+
+      - name: Run build mpc-adapter
+        run: yarn workspace @safeheron/two-party-mpc-adapter run build
+
+      - name: Run test example
         run: yarn workspace example run test
 
-      - name: Run build
+      - name: Run build example
         run: yarn workspace example run build
 
-      - name: Run deploy
+      - name: Run deploy example
         run: yarn workspace example run deploy

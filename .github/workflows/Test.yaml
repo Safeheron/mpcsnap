@@ -20,5 +20,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: prepare adapter
+        run: yarn run prestart
+
       - name: Run tests
         run: yarn run test
