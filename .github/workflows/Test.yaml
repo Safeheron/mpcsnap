@@ -2,8 +2,8 @@ name: Release
 on: workflow_dispatch
 
 jobs:
-  maybe-release:
-    name: release
+  Test-case:
+    name: test
     runs-on: ubuntu-latest
 
     steps:
