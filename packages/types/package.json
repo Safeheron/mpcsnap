@@ -1,0 +1,17 @@
+{
+  "name": "@safeheron/mpcsnap-types",
+  "version": "1.0.0",
+  "description": "Types for MPCSnap",
+  "types": "./index.d.ts",
+  "author": "Yann<yanjie002@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Safeheron/mpcsnap"
+  },
+  "keywords": [
+    "MPCSnap",
+    "MPC",
+    "MetaMask",
+    "safeheron"
+  ]
+}

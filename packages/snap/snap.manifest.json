@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "proposedName": "MPCSnap",
+  "description": "The MPC Snap.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Safeheron/mpcsnap"
+  },
+  "source": {
+    "shasum": "iwEESlU741wVOOv/eU/qYtS80PGarS9EoyNea3HqJHo=",
+    "location": {
+      "npm": {
+        "filePath": "dist/mpcSnapBundle.js",
+        "iconPath": "dist/images/icon.svg",
+        "packageName": "@safeheron/mpcsnap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "snap_confirm": {},
+    "snap_manageState": {}
+  },
+  "manifestVersion": "0.1"
+}

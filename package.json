@@ -1,0 +1,48 @@
+{
+  "name": "mpcsnap",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "Yann<yanjie002@gmail.com>",
+  "contributors": [
+    {
+      "name": "SafeheronRenzhao",
+      "email": "renzhao@safeheron.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Safeheron/mpcsnap"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start:snap": "yarn workspace @safeheron/mpcsnap serve",
+    "start:example": "yarn workspace example start",
+    "start": "concurrently --raw --kill-others \"yarn run start:snap\" \"yarn run start:example\"",
+    "test": "yarn workspaces foreach -vp run test",
+    "build": "yarn workspaces foreach -vpt run build",
+    "prestart": "yarn workspace @safeheron/two-party-mpc-adapter run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "concurrently": "^7.2.2",
+    "eslint": "^8.18.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-webpack-plugin": "^3.2.0",
+    "jest": "^28.1.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.1.1",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "packageManager": "yarn@3.2.1"
+}

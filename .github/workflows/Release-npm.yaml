@@ -1,0 +1,32 @@
+name: Release npm packages
+on: workflow_dispatch
+
+jobs:
+  maybe-release-npm:
+    environment: Release
+    name: release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout respository
+        uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3.4.1
+        with:
+          node-version: 16
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run build
+        run: yarn run build
+
+      - env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: |
+          echo npmAuthToken: "$NODE_AUTH_TOKEN" >> ./.yarnrc.yml
+
+      - name: Run publish
+        run: yarn workspaces foreach -v --exclude root --no-private npm publish --tolerate-republish --access public

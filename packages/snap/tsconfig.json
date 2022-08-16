@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "useUnknownInCatchVariables": false,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2020",
+    "lib": [
+      "dom",
+      "ES2017"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src",
+    "webpack.config.ts",
+    "@types/Metamask.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../mpc-adapter"
+    }
+  ]
+}

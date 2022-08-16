@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true
+  },
+  "references": [
+    {"path": "packages/snap"},
+    {"path": "packages/mpc-adapter"},
+    {"path": "packages/types"},
+    {"path": "packages/example"}
+  ]
+}
