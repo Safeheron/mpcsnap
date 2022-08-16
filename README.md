@@ -8,7 +8,7 @@ MPCSnap provides a 2/2 MPC wallet between MetaMask Snap and Keystone to manage E
 
 ## Use MPCSnap
 
-- We have published MPCSnap on the npm repository, please follow the readme [here](./packages/snap/README.md).
+- We have published MPCSnap on the npm repository, please follow the readme [here](./packages/snap/README.md)
 - We forked the Keystone repository and added MPC-related features, as detailed [here](https://github.com/Safeheron/Keystone-cold-app)
 
 ## Test MPCSnap
@@ -17,8 +17,8 @@ MPCSnap provides a 2/2 MPC wallet between MetaMask Snap and Keystone to manage E
 
 First, install Metamask Flask to use MPCSnap.
 
-- checkout [Metamask Flask page](https://metamask.io/flask/).
-- Install Metamask Flask on your chrome.
+- checkout [Metamask Flask page](https://metamask.io/flask/)
+- Install Metamask Flask on your chrome
 
 ### Keystone
 

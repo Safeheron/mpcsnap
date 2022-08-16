@@ -31,5 +31,7 @@ jobs:
       - name: Run build example
         run: yarn workspace example run build
 
-      - name: Run deploy example
-        run: yarn workspace example run deploy
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: packages/example/dist/

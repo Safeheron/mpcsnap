@@ -98,4 +98,4 @@ const rawTx = signerP1.exportRawTx()
 
 ## Bundle for Keystone
 
-For keystone, you need use `dist/MPC.bundle.js`
+For keystone, you need use `dist/MPC.bundle.js`.

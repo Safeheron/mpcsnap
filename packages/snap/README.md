@@ -3,7 +3,7 @@
 MPCSnap enables MPC Wallet inside MetaMask.
 
 ## Snaps Introducion
-For more about Snaps, please follow MetaMask Snaps guide [here](https://docs.metamask.io/guide/snaps.html)
+For more about Snaps, please follow MetaMask Snaps guide [here](https://docs.metamask.io/guide/snaps.html).
 
 ## MPCSnap RPC Methods
 
