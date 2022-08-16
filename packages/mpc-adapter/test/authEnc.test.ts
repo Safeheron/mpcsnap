@@ -5,8 +5,8 @@ describe('authEnc', ()=>{
   test('generateKeyPaire', async()=>{
     const keyPair = await Encryptor.generateKeyPaire()
 
-    expect(keyPair).toContain('priv')
-    expect(keyPair).toContain('pub')
+    expect(keyPair).toHaveProperty('priv')
+    expect(keyPair).toHaveProperty('pub')
   })
 
   test('encryptBytes', async()=>{
