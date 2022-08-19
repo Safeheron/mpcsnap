@@ -25,8 +25,9 @@ First, install Metamask Flask to use MPCSnap.
 In the example we provided, the Keystone hardware wallet is one of the two parties of the MPC algorithm,
 We forked the source code for Keystone and developed the MPC wallet section, checkout the [repository](https://github.com/Safeheron/Keystone-cold-app).
 
-### Demo video (Upcoming)
+### Demo video
 
+Check out [video](https://youtu.be/588bNXEiS_s) of creating an MPC wallet & sending a transaction with MPCSnap and Keystone
 
 ### Live demo
 
