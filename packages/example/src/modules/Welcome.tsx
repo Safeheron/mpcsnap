@@ -38,6 +38,8 @@ const Welcome = () => {
           to install
         </p>
       )}
+
+      <p>This site is for demonstration purposes only, please do not use it in a production environment.</p>
     </Box>
   )
 }
