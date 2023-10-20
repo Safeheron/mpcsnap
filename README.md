@@ -29,10 +29,6 @@ We forked the source code for Keystone and developed the MPC wallet section, che
 
 Check out [video](https://youtu.be/588bNXEiS_s) of creating an MPC wallet & sending a transaction with MPCSnap and Keystone
 
-### Live demo
-
-Test MPCSnap in this [example](https://mpcsnap.safeheron.com).
-
 ### Run MPCSnap demo locally
 
 - `yarn install`
